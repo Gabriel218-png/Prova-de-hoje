@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment API Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <main class="app-shell">
+        <header class="topbar">
+            <div class="brand">
+                <span class="eyebrow">Projeto de API</span>
+                <h1>Entertainment API Hub</h1>
+                <p>Explore dados reais da PokéAPI com cards interativos, navegação rápida e modo escuro.</p>
+            </div>
+            <button id="theme-toggle" class="theme-button" aria-label="Alternar modo escuro">Modo escuro</button>
+        </header>
+
+        <section class="menu-panel">
+            <p class="menu-copy">Escolha uma área para carregar dados da API e ver cartas com informações úteis.</p>
+            <div class="menu-buttons">
+                <button class="nav-button active" data-page="home">Início</button>
+                <button class="nav-button" data-page="pokemon">Pokémons</button>
+                <button class="nav-button" data-page="abilities">Habilidades</button>
+                <button class="nav-button" data-page="types">Tipos</button>
+            </div>
+        </section>
+
+        <section class="content-panel">
+            <div class="section-heading">
+                <div>
+                    <h2 id="content-title">Bem-vindo ao Entertainment API Hub</h2>
+                    <p id="content-description">Clique em um dos botões acima para carregar os cards da PokéAPI.</p>
+                </div>
+                <div id="status-message" class="status-message">Pronto para carregar dados.</div>
+            </div>
+            <div id="cards-container" class="cards-grid">
+                <article class="card card-large">
+                    <h3>Menu inicial</h3>
+                    <p>Use os botões para ver uma seleção de Pokémons, habilidades ou tipos diretamente da PokéAPI.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script defer src="../JS/script.js"></script>
+</body>
+</html>
